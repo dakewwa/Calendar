@@ -244,13 +244,13 @@ document.addEventListener("DOMContentLoaded", function() {
             showNotification(event);
         }, timeout);
     }
-}
+    }
 
-function showNotification(event) {
-    const formattedStartDate = formatDate(new Date(event.start));
-    notificationContent.textContent = `Reminder: ${event.title} starting at ${formattedStartDate}`;
-    notificationPopup.style.display = 'block';
-}
+    function showNotification(event) {
+        const formattedStartDate = formatDate(new Date(event.start));
+        notificationContent.textContent = `Reminder: ${event.title} starting at ${formattedStartDate}`;
+        notificationPopup.style.display = 'block';
+    }
 
     
 
